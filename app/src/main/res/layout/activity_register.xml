@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dip"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:background="#CC0000"
+        android:src="@drawable/img_white"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CC0000"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="Royce Banks"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CC0000"
+        android:gravity="right"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="right"
+            android:background="@drawable/white_border"
+            android:paddingTop="7dip"
+            android:paddingLeft="7dip"
+            android:text="~TheSahilShinde  "
+            android:textColor="@color/white"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dip"
+        android:text="Registration Form"
+        android:textColor="#CC0000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="10dip"
+        android:text="All fields are mandatory!"
+        android:textColor="#666666"
+        android:textSize="15sp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="20dp"
+
+        android:padding="8dip"
+        android:stretchColumns="1"
+        android:background="@drawable/border"
+        >
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:id="@+id/r_e_name"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:layout_marginTop="7dp"
+                android:id="@+id/r_e_email"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account No:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:layout_marginTop="7dp"
+                android:id="@+id/r_e_account"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:inputType="number"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/r_e_password"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textPassword"
+                />
+
+        </TableRow>
+        <TableRow
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Pass:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/r_e_confirm"
+                android:inputType="textPassword"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone no:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/r_e_phone"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:inputType="phone"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balance:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <EditText
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/r_e_balance"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        >
+
+        <Button
+            android:id="@+id/r_b_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#CC0000"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/r_b_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#CC0000"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

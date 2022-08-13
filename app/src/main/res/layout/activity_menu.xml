@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <ImageView
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_width="match_parent"
+        android:layout_height="85dip"
+        android:background="#CC0000"
+        android:src="@drawable/img_white"
+        />
+
+    <TextView
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CC0000"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:padding="5dip"
+        android:text="Royce Banks"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CC0000"
+        android:gravity="right"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="right"
+            android:background="@drawable/white_border"
+            android:paddingTop="7dip"
+            android:paddingLeft="7dip"
+            android:text="~TheSahilShinde  "
+            android:textColor="@color/white"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/m_b_withdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginRight="10dip"
+            android:backgroundTint="#CC0000"
+            android:text="Withdraw" />
+
+        <Button
+            android:id="@+id/m_b_deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginRight="10dip"
+            android:backgroundTint="#CC0000"
+            android:text="Deposit" />
+
+        <Button
+            android:id="@+id/m_b_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:backgroundTint="#CC0000"
+            android:text="View Balance" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/m_b_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginRight="10dip"
+            android:backgroundTint="#CC0000"
+            android:text="Transfer" />
+
+        <Button
+            android:id="@+id/m_b_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginRight="10dip"
+            android:backgroundTint="#CC0000"
+            android:text="Change Pass" />
+
+        <Button
+            android:id="@+id/m_b_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:backgroundTint="#CC0000"
+            android:text="Profile" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/m_b_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginRight="10dip"
+            android:backgroundTint="#CC0000"
+            android:text="About us" />
+
+        <Button
+            android:id="@+id/m_b_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:backgroundTint="#CC0000"
+            android:text="Logout" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dip"
+        >
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/m_l_withdraw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dip"
+                    android:text="Withdraw"
+                    android:textColor="#CC0000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    >
+
+                    <TableRow
+                        android:layout_marginTop="40dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+
+                            android:text="Amount:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+                            />
+
+                        <EditText
+                            android:id="@+id/w_e_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:padding="10dip" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="50dip"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Password:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+                            />
+
+                        <EditText
+                            android:id="@+id/w_e_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:hint=""
+                            android:inputType="textPassword"
+                            android:padding="10dip" />
+
+                    </TableRow>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dip"
+                        android:gravity="right">
+
+                        <Button
+                            android:id="@+id/w_b_refresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="25dp"
+                            android:backgroundTint="#CC0000"
+                            android:text="Refresh"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/w_b_submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="25dp"
+                            android:backgroundTint="#CC0000"
+                            android:text="Submit"
+                            android:textStyle="bold"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m_l_deposit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dip"
+                    android:text="Deposit"
+                    android:textColor="#CC0000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    >
+
+                    <TableRow
+                        android:layout_marginTop="40dip"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Amount:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+                            />
+
+                        <EditText
+                            android:id="@+id/d_e_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:padding="10dip" />
+
+                    </TableRow>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dip"
+                        android:gravity="right">
+
+                        <Button
+                            android:id="@+id/d_b_refresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="25dp"
+                            android:backgroundTint="#CC0000"
+                            android:text="Refresh"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/d_b_submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="25dp"
+                            android:backgroundTint="#CC0000"
+                            android:text="Submit"
+                            android:textStyle="bold"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m_l_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dip"
+                    android:text="View Balance"
+                    android:textColor="#CC0000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    >
+
+                    <TableRow
+                        android:layout_marginTop="40dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Balance:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+
+
+                            />
+
+                        <TextView
+                            android:id="@+id/v_t_balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:padding="10dip"
+                            android:text="xxx" />
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m_l_transfer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dip"
+                    android:text="Transfer"
+                    android:textColor="#CC0000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    >
+
+                    <TableRow
+                        android:layout_marginTop="40dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Account no:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+
+
+                            />
+
+                        <EditText
+                            android:id="@+id/t_e_account"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:hint=""
+                            android:inputType="number"
+                            android:padding="10dip" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="50dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Amount:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+                            />
+
+                        <EditText
+                            android:id="@+id/t_e_amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:hint=""
+                            android:inputType="numberDecimal"
+                            android:padding="10dip" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="40dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Password:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+
+
+                            />
+
+                        <EditText
+                            android:id="@+id/t_e_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:hint=""
+                            android:inputType="textPassword"
+                            android:padding="10dip" />
+
+                    </TableRow>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dip"
+                        android:gravity="right">
+
+                        <Button
+                            android:id="@+id/t_b_refresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="25dp"
+                            android:backgroundTint="#CC0000"
+                            android:text="Refresh"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/t_b_submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="25dp"
+                            android:backgroundTint="#CC0000"
+                            android:text="Submit"
+                            android:textStyle="bold"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m_l_change"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dip"
+                    android:text="Change Password"
+                    android:textColor="#CC0000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    >
+
+                    <TableRow
+                        android:layout_marginTop="40dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Old Password:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+
+
+                            />
+
+                        <EditText
+                            android:id="@+id/c_e_old"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:hint=""
+                            android:inputType="textPassword"
+                            android:padding="10dip" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="50dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="New Password:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+                            />
+
+                        <EditText
+                            android:id="@+id/c_e_new"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:hint=""
+                            android:inputType="textPassword"
+                            android:padding="10dip" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="40dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Confirm pass:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+
+
+                            />
+
+                        <EditText
+                            android:id="@+id/c_e_confirm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:hint=""
+                            android:inputType="textPassword"
+                            android:padding="10dip" />
+
+                    </TableRow>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dip"
+                        android:gravity="right">
+
+                        <Button
+                            android:id="@+id/c_b_refresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="25dp"
+                            android:backgroundTint="#CC0000"
+                            android:text="Refresh"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/c_b_submit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="25dp"
+                            android:backgroundTint="#CC0000"
+                            android:text="Submit"
+                            android:textStyle="bold"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m_l_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:visibility="invisible"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dip"
+                    android:text="Profile"
+                    android:textColor="#CC0000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    >
+
+                    <TableRow
+                        android:layout_marginTop="40dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Name:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+                            />
+
+                        <TextView
+                            android:id="@+id/p_t_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Sahil Shinde"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+
+
+                            />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="10dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Email:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+                            />
+
+                        <TextView
+                            android:id="@+id/p_t_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="sahilsshinde5@gmail.com"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="10dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Account No:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+                            />
+
+                        <TextView
+                            android:id="@+id/p_t_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="99999999"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="10dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Phone No:"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+                            />
+
+                        <TextView
+                            android:id="@+id/p_t_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="9665502816"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="10dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Balance"
+                            android:textColor="@color/black"
+                            android:textSize="20dip"
+                            />
+
+                        <TextView
+                            android:id="@+id/p_t_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="99999999"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            />
+
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m_l_about"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dip"
+                    android:text="About us"
+                    android:textColor="#CC0000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    >
+
+                    <TableRow
+                        android:layout_marginTop="40dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Email:"
+                            android:textColor="#CC0000"
+                            android:textSize="20dip"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="sahilsshinde5@gmail.com"
+                            android:textColor="#CC0000"
+                            android:textSize="20dip"
+                            />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="10dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Phone no:"
+                            android:textColor="#CC0000"
+                            android:textSize="20dip"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="+91 9665502816"
+                            android:textColor="#CC0000"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="10dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Developer:"
+                            android:textColor="#CC0000"
+                            android:textSize="20dip"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Sahil Sanjay Shinde"
+                            android:textColor="#CC0000"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="10dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Subject:"
+                            android:textColor="#CC0000"
+                            android:textSize="20dip"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="MAD"
+                            android:textColor="#CC0000"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="10dip"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Coordinator"
+                            android:textColor="#CC0000"
+                            android:textSize="20dip"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dip"
+                            android:text="Mr. Megharaj Patil Sir"
+                            android:textColor="#CC0000"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            />
+
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:id="@+id/m_l_logout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dip"
+                    android:text="Confirm Logout ?"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/l_b_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dip"
+                        android:backgroundTint="#CC0000"
+                        android:text="Back" />
+
+                    <Button
+                        android:id="@+id/l_b_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#CC0000"
+                        android:text="YES" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
